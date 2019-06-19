@@ -1,5 +1,13 @@
+/* 
+font-family: 'Righteous', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Black Han Sans', sans-serif; 
+font-family: 'PT Serif', serif;
+*/
+
+
 .bg-company-blue {
-  background-color: rgb(59, 128, 238) !important;
+  background-color: #11679F !important;
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -12,6 +20,41 @@
 /* .nav-link-color {
   color: white;
 } */
+
+.boskom-logo-nav {
+  width: 100px;
+  height: auto;
+}
+
+.boskom-logo-container {
+  position: relative;
+  width: 20px;
+  /* border: 1px solid red; */
+  height: 20px;
+}
+
+.boskom-sun {
+  position: absolute;
+  width: 60px;
+  top: -20px;
+  left: -25px;
+  z-index: -20;
+}
+
+.boskom-logo-text {
+  position: absolute;
+  font-size: 2.2rem;
+  top: -5px;
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Marck Script', cursive; */
+  /* font-family: 'Black Han Sans', sans-serif; */
+  font-family: 'PT Serif', serif;
+  font-weight: bolder;
+}
+
+.navbar-brand-name {
+  font-weight: bold;
+}
 
 .nav-link {
   /* font-weight: 500; */
@@ -47,7 +90,7 @@
 }
 
 .carousel {
-  border-bottom: 5px solid rgb(59, 128, 238);
+  border-bottom: 5px solid #11679F;
   top: 120px;
   /* margin-bottom: 200px; */
   /* min-height: 300px; */
@@ -154,10 +197,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.about-section {
-  /* height: 1000px; */
-}
-
 .scroll-spacer-about {
   margin-top: 130px;
   display: block;
@@ -207,7 +246,7 @@ html {
 
 .footer-container {
   width: 100%;
-  background-color: rgb(11, 61, 141);
+  background-color: rgb(10, 71, 112);
   height: 50px;
   margin-top: 50px;
   color: #ffffff;

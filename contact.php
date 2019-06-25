@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -43,7 +45,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="boskom-logo-container">
-                        <a class="navbar-brand navbar-brand-name" href="#home"
+                        <a class="navbar-brand navbar-brand-name" href="/"
                             ><img
                                 class="boskom-sun"
                                 src="images\logo\sun.png"
@@ -73,7 +75,7 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link active nav-link-color"
-                                    href="index.html"
+                                    href="/"
                                     >Home</a
                                 >
                             </li>
@@ -108,7 +110,7 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link nav-link-color"
-                                    href="contact.html"
+                                    href="contact.php"
                                     >Contact</a
                                 >
                             </li>
@@ -158,7 +160,14 @@
 
                 <div class="container contact-form-container-wrapper flex-wrap">
                     <div class="contact-form-container shadow">
-                        <form class="needs-validation" novalidate>
+                        <form
+                            class="needs-validation"
+                            novalidate
+                            id="contact-form"
+                            method="post"
+                            action="contactSubmit.php"
+                            role="form"
+                        >
                             <div class="">
                                 <div class="">
                                     <label
@@ -170,8 +179,8 @@
                                         type="text"
                                         class="form-control"
                                         id="validationCustom01"
-                                        placeholder="Name"
-                                        value=""
+                                        placeholder="Full Name"
+                                        name="name"
                                         required
                                     />
                                     <div class="invalid-feedback">
@@ -189,7 +198,7 @@
                                         class="form-control"
                                         id="validationCustom02"
                                         placeholder="Email"
-                                        value=""
+                                        name="email"
                                         required
                                     />
                                     <div class="invalid-feedback">
@@ -208,6 +217,7 @@
                                     class="form-control"
                                     id="validationCustom03"
                                     placeholder="Phone Number"
+                                    name="phone"
                                     required
                                 />
                                 <div class="invalid-feedback">
@@ -223,19 +233,20 @@
                                 <select
                                     class="custom-select form-control"
                                     id="validationCustom04"
+                                    name="estimate"
                                 >
-                                    <option value="1">Choose...</option>
-                                    <option value="2"
+                                    <option value="None">Choose...</option>
+                                    <option value="Garage Door Repair"
                                         >Garage Door Repair</option
                                     >
-                                    <option value="3">New Garage Door</option>
-                                    <option value="4"
+                                    <option value="New Garage Door">New Garage Door</option>
+                                    <option value="Garage Door Opener"
                                         >Garage Door Opener</option
                                     >
-                                    <option value="5"
+                                    <option value="Broken Spring Replacement"
                                         >Broken Spring Replacement</option
                                     >
-                                    <option value="6">Other</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                             <div>
@@ -243,14 +254,15 @@
                                     >Other Information</label
                                 >
                                 <textarea
-                                    name="other_info"
-                                    id=""
+                                    id="form_more_info"
+                                    name="message"
                                     class="text-area-container"
                                 ></textarea>
                             </div>
-                            <button class="btn btn-primary" type="submit">
+                            <button class="btn btn-primary" type="submit" name="submit">
                                 Submit form
                             </button>
+                            <div class="messages"></div>
                         </form>
 
                         <!-- FORM VALIDATION -->
@@ -360,5 +372,11 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+            integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+            crossorigin="anonymous"
+        ></script>
+        <!-- <script src="contact.js"></script> -->
     </body>
 </html>

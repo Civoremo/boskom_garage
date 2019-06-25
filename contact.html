@@ -85,22 +85,30 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-color" href="garagedooropeners.html"
+                                <a
+                                    class="nav-link nav-link-color"
+                                    href="garagedooropeners.html"
                                     >Openers</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-color" href="newgaragedoors.html"
+                                <a
+                                    class="nav-link nav-link-color"
+                                    href="newgaragedoors.html"
                                     >Doors</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-color" href="brokensprings.html"
+                                <a
+                                    class="nav-link nav-link-color"
+                                    href="brokensprings.html"
                                     >Springs</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-color" href="contact.html"
+                                <a
+                                    class="nav-link nav-link-color"
+                                    href="contact.html"
                                     >Contact</a
                                 >
                             </li>
@@ -122,13 +130,204 @@
         <!-- JUMBOTRON -->
         <section>
             <div class="jumbotron-offset"></div>
-            <div class="jumbotron jumbotron-fluid ">
-                <div class="container">
-                    <h1 class="display-4">Fluid jumbotron</h1>
-                    <p class="lead">
-                        This is a modified jumbotron that occupies the entire
-                        horizontal space of its parent.
-                    </p>
+            <!-- <div class="jumbotron jumbotron-fluid "> -->
+            <!-- <div class="container">
+                        <h1 class="display-4">Fluid jumbotron</h1>
+                        <p class="lead">
+                            This is a modified jumbotron that occupies the entire
+                            horizontal space of its parent.
+                        </p>
+                    </div> -->
+            <img
+                class="d-block w-100 carousel-image-min-height"
+                src="images\carousel\garage_01.png"
+                alt="garage door"
+            />
+        </section>
+
+        <!-- CONTACT -->
+        <section class="about-section">
+            <div id="about" class="scroll-spacer-about"></div>
+            <div class="text-center service-header-text-container">
+                <div
+                    class="container service-header-text"
+                    style="margin-bottom: 50px;"
+                >
+                    <h2>CONTACT US / FREE ESTIMATE FORM</h2>
+                </div>
+
+                <div class="container contact-form-container-wrapper flex-wrap">
+                    <div class="contact-form-container shadow">
+                        <form class="needs-validation" novalidate>
+                            <div class="">
+                                <div class="">
+                                    <label
+                                        for="validationCustom01"
+                                        class="form-label-style"
+                                        >Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="validationCustom01"
+                                        placeholder="Name"
+                                        value=""
+                                        required
+                                    />
+                                    <div class="invalid-feedback">
+                                        Please provide a valid name.
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <label
+                                        for="validationCustom02"
+                                        class="form-label-style"
+                                        >Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="validationCustom02"
+                                        placeholder="Email"
+                                        value=""
+                                        required
+                                    />
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label
+                                    for="validationCustom03"
+                                    class="form-label-style"
+                                    >Phone Number</label
+                                >
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="validationCustom03"
+                                    placeholder="Phone Number"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    Please provide a valid phone number.
+                                </div>
+                            </div>
+                            <div class="">
+                                <label
+                                    for="validationCustom04"
+                                    class="form-label-style"
+                                    >Type of Estimate</label
+                                >
+                                <select
+                                    class="custom-select form-control"
+                                    id="validationCustom04"
+                                >
+                                    <option value="1">Choose...</option>
+                                    <option value="2"
+                                        >Garage Door Repair</option
+                                    >
+                                    <option value="3">New Garage Door</option>
+                                    <option value="4"
+                                        >Garage Door Opener</option
+                                    >
+                                    <option value="5"
+                                        >Broken Spring Replacement</option
+                                    >
+                                    <option value="6">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label-style"
+                                    >Other Information</label
+                                >
+                                <textarea
+                                    name="other_info"
+                                    id=""
+                                    class="text-area-container"
+                                ></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">
+                                Submit form
+                            </button>
+                        </form>
+
+                        <!-- FORM VALIDATION -->
+                        <script>
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function() {
+                                "use strict";
+                                window.addEventListener(
+                                    "load",
+                                    function() {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName(
+                                            "needs-validation"
+                                        );
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(
+                                            forms,
+                                            function(form) {
+                                                form.addEventListener(
+                                                    "submit",
+                                                    function(event) {
+                                                        if (
+                                                            form.checkValidity() ===
+                                                            false
+                                                        ) {
+                                                            event.preventDefault();
+                                                            event.stopPropagation();
+                                                        }
+                                                        form.classList.add(
+                                                            "was-validated"
+                                                        );
+                                                    },
+                                                    false
+                                                );
+                                            }
+                                        );
+                                    },
+                                    false
+                                );
+                            })();
+                        </script>
+                    </div>
+                    <div class="contact-form-hours-container shadow">
+                        <h3
+                            class="lead text-left"
+                            style="font-weight: 400; margin-bottom: 30px;"
+                        >
+                            HOURS OF OPERATION
+                        </h3>
+                        <div>
+                            <div class="hours-container">
+                                <div class="hours-days-container text-left">
+                                    <p>SUNDAY *</p>
+                                    <p>MONDAY</p>
+                                    <p>TUESDAY</p>
+                                    <p>WEDNESDAY</p>
+                                    <p>THURSDAY</p>
+                                    <p>FRIDAY</p>
+                                    <p>SATURDAY *</p>
+                                </div>
+                                <div class="hours-days-container">
+                                    <p>9:00 AM – 5:00 PM</p>
+                                    <p>9:00 AM – 5:00 PM</p>
+                                    <p>9:00 AM – 5:00 PM</p>
+                                    <p>9:00 AM – 5:00 PM</p>
+                                    <p>9:00 AM – 5:00 PM</p>
+                                    <p>9:00 AM – 5:00 PM</p>
+                                    <p>9:00 AM – 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hours-exception">
+                            *After hours/emergency service is available based on
+                            technician availability, service location, and
+                            service type. Additional fees may apply.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

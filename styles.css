@@ -392,3 +392,67 @@ html {
   padding: 0 50px;
   margin: 0 auto;
 }
+
+.contact-form-container {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  /* min-width: 48%; */
+  width: 450px;
+  padding: 30px 30px;
+  margin: 20px 20px;
+  /* background-color: rgb(230, 232, 236); */
+}
+
+.text-area-container {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.form-label-style {
+  /* border: 1px solid red; */
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.form-control {
+  margin-bottom: .8rem;
+}
+
+.contact-form-hours-container {
+  /* border: 1px solid rgb(202, 202, 202); */
+  border-radius: 10px;
+  /* min-width: 48%; */
+  width: 450px;
+
+  padding: 30px 30px;
+  background-color: rgb(230, 232, 236);
+  margin: 20px 20px;
+}
+
+.contact-form-container-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* border: 1px solid green; */
+  margin-bottom: 100px;
+}
+
+.hours-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours-days-container {
+  min-width: 183px;
+  /* border: 1px solid red; */
+}
+
+.hours-exception {
+  /* border: 1px solid green; */
+  margin: 20px 0;
+}

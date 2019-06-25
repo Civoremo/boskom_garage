@@ -21,6 +21,16 @@ font-family: 'PT Serif', serif;
   color: white;
 } */
 
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #222222;
+}
+
 .boskom-logo-nav {
   width: 100px;
   height: auto;
@@ -86,7 +96,7 @@ font-family: 'PT Serif', serif;
 }
 
 .phone-color {
-  color: orange;
+  color: #F7AA25;
 }
 
 .carousel {
@@ -107,15 +117,32 @@ font-family: 'PT Serif', serif;
   margin: auto;
   /* opacity: .5; */
   /* border: 1px solid red; */
+  /* -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black; */
+   /* text-shadow:
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+
+  color: #11679F; */
 }
 
 .carousel-header-text {
   font-size: 3rem;
+  text-shadow:
+    -1px -1px 0 #11679F,  
+     1px -1px 0 #11679F,
+    -1px  1px 0 #11679F,
+     1px  1px 0 #11679F;
+
+  color: #F7AA25;
 }
 
 .carousel-paragraph-text {
   font-size: 2rem;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  font-weight: 500;
 }
 
 .scroll-spacer-services {
@@ -260,4 +287,108 @@ html {
   margin: 0 auto;
   /* border: 1px solid red; */
   font-size: 0.7rem;
+}
+
+.jumbotron-offset {
+  height: 120px;
+  visibility: hidden;
+}
+
+.headline-spacer {
+  margin-top: 80px;
+}
+
+.bottom-ofPage-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-garageDoor-step-box {
+  background-color: rgb(230, 232, 236);
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.garageDoor-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-bottom: 100px; */
+  /* max-width: 400px; */
+  margin-top: 30px;
+}
+
+.single-garageDoor-container {
+  margin: 20px 10px;
+  /* padding: 5px 5px; */
+  position: relative;
+  /* border-radius: 10% !important; */
+  border: 1px solid rgb(230, 232, 236);
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.single-garageDoor-wrapper {
+  /* border: 1px solid blue; */
+  max-width: 275px;
+}
+
+.single-garageDoor-wrapper-double {
+  /* border: 1px solid blue; */
+  max-width: 375px;
+}
+
+.garageDoor-image-round {
+  width: 200px;
+  /* height: 200px; */
+  /* border: 1px solid blue; */
+  margin-bottom: 20px !important;
+  border-radius: 10% !important;
+}
+
+.garageDoor-image {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  /* border: 1px solid blue; */
+}
+
+.garageDoor-windows-image {
+  max-width: 100%;
+  /* width: auto; */
+  height: auto;
+  /* max-width: 200px; */
+  /* border: 1px solid blue; */
+}
+
+.triple-garageDoor-color-wrapper {
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    /* padding: 0 5rem; */
+}
+
+.garageDoor-window-sizer {
+  margin: 0 30px;
+  /* border: 1px solid red; */
+}
+
+.garageDoor-window-container-sizer {
+  width: 250px;
+  /* margin: 10px 30px; */
+  /* border: 1px solid red; */
+}
+
+.broken-springs-wrapper {
+  /* border: 1px solid red; */
+  max-width: 700px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
